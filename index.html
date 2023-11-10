@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMESH DAILY SELL REPORT</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="connect.php" method="post">
+ <li class="brand"> <img src="logo.jpg" alt="logo">   <h2 >दैनिक रिपोर्ट - गौर केंद्र देशी  (A)</h2>   <h3>DATE= <input type="date" name="date" ></h3></li>
+<!---<p>dukan ka NAME:<b> GAUR KEND A</b></p>-->
+
+<table style="width:100%">
+  <tr>
+   <th >मसाला</th>
+    <th>पिछला बाकी</th>
+    <th>आमद</th> 
+    <th>कुल माल </th>
+    <th>बाकी माल</th>
+    <th>बिक्री</th>
+    <th>दर</th>
+    <th>किमत</th>
+  </tr>
+  <tr> 
+    <td > <b>पऊआ(42.8%)</b> </td>
+    <td id="d11"><input type="text" name="PichlaBaki" class="from-control" id="tatalval" onchange="f()" ></td>
+    <td><input type="text" name="Amad" ></td>
+    <td> <input type="text" name="KulYog" ></td>
+    <td id="d12"> <input type="text" name="KulMal" class="from-control" id="remainingaMal"  ></td>
+    <td id="d13"> <input type="text" name="Bikri" class="from-control" id="sale" onchange="f()"></td>
+    <td id="d14"> <input type="text" name="Dar" ></td>
+    <td id="d15"> <input type="text" name="Kimat" ></td>
+  </tr>
+  <tr>
+    <td> <b> पऊआ(36%) </b></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+
+    
+  </tr>
+  <tr>
+    <td><b>पऊआ (25%)</b> </td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+
+    
+  </tr>
+  <tr>
+     <td> पऊआ (other)</td>
+     <td> <input type="text" name="button"  min="10px" max="20px" ></td>
+     <td> <input type="text" name="button" ></td>
+     <td> <input type="text" name="button" ></td>
+     <td> <input type="text" name="button" ></td>
+     <td> <input type="text" name="button" ></td>
+     <td> <input type="text" name="button" ></td>
+     <td> <input type="text" name="button" ></td>
+ 
+  </tr>
+  <tr>
+    <td> कुल योग </td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="button" ></td>
+  </tr>
+
+</table>
+<br><br><br>
+<table width="100%">
+  <tr>
+      <th><h3>खर्चा विवरन </h3></th>
+      <th><h3> नोट्स विवरन</h3></th>
+
+  </tr>
+  <tr>
+      <td>कुल बिक्री = <input type="text" id="s1" > </td>
+      <td>2000* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+
+   <tr>   <td>योग = <input type="text" id="s1" ></td>
+          <td>500* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+   </tr>
+    <tr>  <td>खर्चा = <input type="text" id="s1"> </td>
+    <td>200*<input type="text" id="s2">=<input type="text" name="button" id="s3"> </td>
+  </tr>
+    <tr> 
+       <td>बाकी पैसा = <input type="text" id="s1"></td> 
+       <td> 100* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+    </tr>
+   <tr> <td> नाईट केश = <input type="text" id="s1"></td>
+    <td> 50 * <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+  </tr>
+  <tr>
+    <td> बाकी केश = <input type="text" id="s1"> </td>
+    <td>20*<input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+  </tr> 
+  <tr> 
+    <td> mobile number: => <input type="tel" name="mobile_number" placeholder="7351737341"> </td>
+    <td> 10*<input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+  </tr>
+  <tr>
+    <td> sales man = ramesh gola </td>
+    <td> कुल रकम= <input type="text" id="s1"></td>
+  </tr>
+  </tr>
+  
+</table>
+<!--<h2> vivran kharcha </h2><br>
+<h4>kul bikri                                   </h4>
+<h4> yog </h4>
+<h4> kharcha</h4>
+<h4>babki</h4>-->
+<br><br>
+<button onclick="window.print()">Print this page</button>
+    <script src="script.js"></script>
+    <button>submit</button>
+  </fieldset>
+
+</form>
+</body>
+</html>
