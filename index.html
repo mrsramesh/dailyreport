@@ -6,7 +6,7 @@
     <title>RAMESH DAILY SELL REPORT</title>
    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="autominus();">
 
   <form action="connect.php" method="post">
  <li class="brand"> <img src="logo.jpg" alt="logo">   <h2 >दैनिक रिपोर्ट - गौर केंद्र देशी  (A)</h2>   <h3>DATE= <input type="date" name="date" ></h3></li>
@@ -25,23 +25,23 @@
   </tr>
   <tr> 
     <td > <b>पऊआ(42.8%)</b> </td>
-    <td id="d11"><input type="text" name="PichlaBaki" class="from-control" id="tatalval" onchange="f()" ></td>
-    <td><input type="text" name="Amad" ></td>
+    <td id="d11"><input type="number" name="PichlaBaki" class="form-control" id="PichlaBaki" onchange="autominus();" ></td>
+    <td> <input type="text" name="Amad" ></td>
     <td> <input type="text" name="KulYog" ></td>
-    <td id="d12"> <input type="text" name="KulMal" class="from-control" id="remainingaMal"  ></td>
-    <td id="d13"> <input type="text" name="Bikri" class="from-control" id="sale" onchange="f()"></td>
-    <td id="d14"> <input type="text" name="Dar" ></td>
-    <td id="d15"> <input type="text" name="Kimat" ></td>
+    <td id="d12"> <input type="text" name="KulMal" class="form-control" id="KulMal"  ></td>
+    <td id="d13"> <input type="number" name="Bikri" class="form-control" id="Bikri" onchange="autominus();"></td>
+    <td id="d14"> <input type="text" name="Dar" placeholder="90"></td>
+    <td id="d15"> <input type="text" name="Kimat" class="form-control" id="Kimat"></td>
   </tr>
   <tr>
     <td> <b> पऊआ(36%) </b></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
+    <td> <input type="number" name="PichlaBaki1" class="form-control" id="PichlaBaki1" onchange="autominus();"></td>
+    <td> <input type="text" name="Amad" ></td>
+    <td> <input type="text" name="KulYog" ></td>
+    <td> <input type="text" name="KulMal1" class="form-control" id="KulMal1" ></td>
+    <td> <input type="number" name="Bikri1" class="form-control" id="Bikri1" onchange="autominus();" ></td>
+    <td> <input type="text" name="Dar" placeholder="70"  ></td>
+    <td> <input type="text" name="Kimat1" class="form-control" id="Kimat1" ></td>
 
     
   </tr>
@@ -76,7 +76,7 @@
     <td> <input type="text" name="button" ></td>
     <td> <input type="text" name="button" ></td>
     <td> <input type="text" name="button" ></td>
-    <td> <input type="text" name="button" ></td>
+    <td> <input type="text" name="Kimatall" class="form-control" id="Kimatall" ></td>
   </tr>
 
 </table>
@@ -89,32 +89,33 @@
   </tr>
   <tr>
       <td>कुल बिक्री = <input type="text" id="s1" > </td>
-      <td>2000* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+      <td>2000* <input type="text" name="cash" id="s11" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s12" class="form-control" placeholder="OFF"></td>
 
-   <tr>   <td>योग = <input type="text" id="s1" ></td>
-          <td>500* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+   <tr>   
+      <td>योग = <input type="text" id="s1" ></td>
+      <td>500* <input type="text" id="s21" class="form-control" onchange="autominus();" >=<input type="text" name="text" id="s22" class="form-control"></td>
    </tr>
-    <tr>  <td>खर्चा = <input type="text" id="s1"> </td>
-    <td>200*<input type="text" id="s2">=<input type="text" name="button" id="s3"> </td>
+    <tr>  <td>खर्चा = <input type="text" id="sf1" class="form-control" onchange="autominus();"> </td>
+    <td>200*<input type="text" id="s31" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s32" class="form-control"> </td>
   </tr>
     <tr> 
-       <td>बाकी पैसा = <input type="text" id="s1"></td> 
-       <td> 100* <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+       <td>बाकी पैसा = <input type="text" id="sf2" class="form-control"></td> 
+       <td> 100* <input type="text" id="s41" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s42" class="form-control"></td>
     </tr>
    <tr> <td> नाईट केश = <input type="text" id="s1"></td>
-    <td> 50 * <input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+    <td> 50 * <input type="text" id="s51" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s52" class="form-control"></td>
   </tr>
   <tr>
     <td> बाकी केश = <input type="text" id="s1"> </td>
-    <td>20*<input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+    <td>20*<input type="text" id="s61" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s62" class="form-control"></td>
   </tr> 
   <tr> 
     <td> mobile number: => <input type="tel" name="mobile_number" placeholder="7351737341"> </td>
-    <td> 10*<input type="text" id="s2">=<input type="text" name="button" id="s3"></td>
+    <td> 10*<input type="text" id="s71" class="form-control" onchange="autominus();">=<input type="text" name="text" id="s72" class="form-control"></td>
   </tr>
   <tr>
     <td> sales man = ramesh gola </td>
-    <td> कुल रकम= <input type="text" id="s1"></td>
+    <td> कुल रकम= <input type="text" id="s81" class="form-control"></td>
   </tr>
   </tr>
   
