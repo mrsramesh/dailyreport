@@ -87,5 +87,15 @@ var s41 = document.getElementById("s41").value;
     var sf2 = parseFloat(Kimatall)-parseFloat(sf1);
     document.getElementById("sf2").value = sf2;
 
+//****************************************** YOUR PROFIT ********************************** */
+var totalpeti = document.getElementById("pmal1").value;
+var totalpua = document.getElementById("pmal2").value;
+var totalmal=parseFloat(totalpeti)*parseFloat(45)+parseFloat(totalpua);
+var odlstock = document.getElementById("pmal3").value;
+var totalsal= parseFloat(odlstock)-parseFloat(totalmal);
+var salmoney =parseFloat(totalsal)*parseFloat(70);
+var salcash = document.getElementById("pmal4").value;
+var yourbachat= parseFloat(salcash)-parseFloat(salmoney);
+document.getElementById("pmal5").value = yourbachat;
 
 }
